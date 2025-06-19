@@ -1,0 +1,23 @@
+
+{
+  "expo": {
+    "name": "viby",
+    "slug": "viby",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "sdkVersion": "53.0.0",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.haddadgeek.viby"
+    },
+    "android": {
+      "package": "com.haddadgeek.viby",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    }
+  }
+}
