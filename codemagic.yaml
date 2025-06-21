@@ -4,17 +4,16 @@ workflows:
     max_build_duration: 60
     environment:
       groups:
-        - expo-secrets # this includes your EXPO_TOKEN
+        - expo-secrets  # this includes your EXPO_TOKEN
       node: 18.16.0
     scripts:
       - echo "🔧 Installing dependencies..."
       - npm install -g expo-cli
       - npm install
       - echo "🚀 Starting Expo build"
-      - expo login --token $EXPO_TOKEN
-      - expo export
+      - eas build --platform android --profile production --non-interactive
     artifacts:
-      - dist/**
+      - '**/*.apk'
     publishing:
       email:
         recipients:
