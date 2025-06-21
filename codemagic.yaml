@@ -4,11 +4,11 @@ workflows:
     max_build_duration: 60
     environment:
       vars:
-        EXPO_TOKEN: syW2zv-kMs6HwlwkW9kjcBWwFssaZOsQLPS9uM54
+        EXPO_TOKEN: vHhhIRqP2vuwiDlfj9egw0O_e8EJofoSH9pKLms3
       node: 18.16.0
     scripts:
       - echo "🔧 Installing CLI tools"
-      - npm install -g expo-cli eas-cli
+      - npm install -g expo-cli eas-cli@latest
       - echo "📦 Installing project dependencies"
       - npm install
       - echo "🚀 Running EAS Build"
