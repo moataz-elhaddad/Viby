@@ -1,23 +1,30 @@
-
 {
   "expo": {
     "name": "viby",
     "slug": "viby",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "sdkVersion": "53.0.0",
-    "platforms": ["ios", "android"],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.haddadgeek.viby"
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "android": {
-      "package": "com.haddadgeek.viby",
+      "package": "com.moataz.viby",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": []
+    },
+    "ios": {
+      "bundleIdentifier": "com.moataz.viby",
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }
