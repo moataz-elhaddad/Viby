@@ -1,19 +1,14 @@
-
 {
+  "cli": {
+    "version": "latest"
+  },
   "build": {
     "production": {
-      "android": {
-        "buildType": "apk"
-      },
-      "ios": {
-        "simulator": true
-      }
-    },
-    "preview": {
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
+      "developmentClient": false,
+      "distribution": "internal"
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
