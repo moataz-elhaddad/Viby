@@ -1,18 +1,24 @@
 workflows:
-  build-viby-apk:
-    name: Build Viby APK
+  build-app:
+    name: Build Viby App
     max_build_duration: 60
     environment:
-      vars:
-        EXPO_TOKEN: EncryptedExpoTokenHere
-      node: 18
+      groups:
+        - expo-secrets # this includes your EXPO_TOKEN
+      node: 18.16.0
     scripts:
+      - echo "🔧 Installing dependencies..."
       - npm install -g expo-cli
       - npm install
-      - expo export --public-url https://yourcdn.com
+      - echo "🚀 Starting Expo build"
+      - expo login --token $EXPO_TOKEN
+      - expo export
     artifacts:
-      - build/**/*.apk
+      - dist/**
     publishing:
       email:
         recipients:
-          - your-email@example.com
+          - moataz.elhaddad@gmail.com
+        notify:
+          success: true
+          failure: true
