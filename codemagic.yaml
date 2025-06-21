@@ -3,8 +3,8 @@ workflows:
     name: Build Viby App
     max_build_duration: 60
     environment:
-      groups:
-        - expo-secrets  # Contains EXPO_TOKEN
+      vars:
+        EXPO_TOKEN: syW2zv-kMs6HwlwkW9kjcBWwFssaZOsQLPS9uM54
       node: 18.16.0
     scripts:
       - echo "🔧 Installing CLI tools"
