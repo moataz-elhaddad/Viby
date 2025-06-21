@@ -7,12 +7,12 @@ workflows:
         EXPO_TOKEN: vHhhIRqP2vuwiDlfj9egw0O_e8EJofoSH9pKLms3
       node: 18.16.0
     scripts:
-      - echo "🔧 Installing CLI tools"
-      - npm install -g expo-cli eas-cli@latest
-      - echo "📦 Installing project dependencies"
+      - echo "🔧 Installing global CLI tools..."
+      - npm install -g expo-cli
+      - echo "📦 Installing project dependencies (including eas-cli@^3.19.0)..."
       - npm install
-      - echo "🚀 Running EAS Build"
-      - eas build --platform android --profile production --non-interactive
+      - echo "🚀 Starting EAS build using local CLI..."
+      - npx eas-cli build --platform android --profile production --non-interactive
     artifacts:
       - '**/*.apk'
     publishing:
