@@ -2,6 +2,7 @@
   "expo": {
     "name": "viby",
     "slug": "viby",
+    "projectId": "f7e65cfc-4e95-40a9-8ff1-e6300b2a274d"
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
