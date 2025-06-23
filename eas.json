@@ -10,7 +10,7 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_TOKEN": "your-expo-token-here"
+        "EXPO_TOKEN": "$EXPO_TOKEN"
       }
     }
   },
