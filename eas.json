@@ -1,8 +1,17 @@
 {
+  "cli": {
+    "version": "3.18.3"
+  },
   "build": {
     "production": {
       "developmentClient": false,
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_TOKEN": "your-expo-token-here"
+      }
     }
   },
   "submit": {
